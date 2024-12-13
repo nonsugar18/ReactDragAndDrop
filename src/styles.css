@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+.page {
+  display: flex;
+  height: 100vh;
+
+  .sidebar {
+    width: 33%;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    input {
+      width: 100%;
+    }
+  }
+
+  .button {
+    border: 1px solid black;
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .button:last-child {
+    margin-bottom: 0px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 67%;
+    .title {
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border-bottom: 2px solid black;
+    }
+    .preview {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
